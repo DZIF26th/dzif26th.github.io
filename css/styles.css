@@ -338,7 +338,6 @@ header h1 {
     padding: 40px 20px 100px; 
     min-height: 90vh;
     background: url('../images/pc_1.png') no-repeat center center;
-    background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -574,15 +573,7 @@ header h1 {
     }
 
     .content-box {
-        min-height: 95vh;
-        background: url('../images/pc_1.png') no-repeat center center;
-        background-size: cover; 
         background-attachment: fixed;
-        margin-bottom: 0;
-    }
-
-    .content-box::before {
-        background: rgba(0, 0, 0, 0.5);
     }
 
     .section {
@@ -599,10 +590,11 @@ header h1 {
     font-size: clamp(1.2rem, 4vw, 2rem);
     margin-bottom: 2rem;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
     padding: 0 10px;
+    line-height: 1.4;
 }
 #intro p {
     line-height: 1.8;
@@ -637,6 +629,8 @@ header h1 {
     #intro h2 {
         font-size: clamp(1.5rem, 4.5vw, 2rem);  
         margin-bottom: 1.5rem;
+        padding: 0 15px;
+        line-height: 1.6;
     }
 }
 
