@@ -587,14 +587,18 @@ header h1 {
 }
 
 #intro h2 {
-    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
     margin-bottom: 2rem;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
     padding: 0 10px;
     line-height: 1.4;
+    width: 100%;
+    display: block;
+    word-break: keep-all !important;
+    word-wrap: normal !important;
 }
 #intro p {
     line-height: 1.8;
@@ -625,12 +629,29 @@ header h1 {
         transform: translateY(0);
     }
 }
+@media screen and (max-width: 768px) {
+    #intro h2 {
+        font-size: clamp(0.9rem, 2.2vw, 1.6rem);
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
+        word-break: keep-all !important;
+        word-wrap: normal !important;
+        padding: 0 5px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #intro h2 {
-        font-size: clamp(1.5rem, 4.5vw, 2rem);  
+        font-size: clamp(0.8rem, 2vw, 1.4rem);  
         margin-bottom: 1.5rem;
-        padding: 0 15px;
+        padding: 0 5px;
         line-height: 1.6;
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
+        word-break: keep-all !important;
+        word-wrap: normal !important;
     }
 }
 
