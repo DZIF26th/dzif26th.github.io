@@ -587,7 +587,7 @@ header h1 {
 }
 
 #intro h2 {
-    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
     margin-bottom: 2rem;
     text-align: center;
     white-space: nowrap !important;
@@ -631,7 +631,7 @@ header h1 {
 }
 @media screen and (max-width: 768px) {
     #intro h2 {
-        font-size: clamp(0.9rem, 2.2vw, 1.6rem);
+        font-size: clamp(1.6rem, 6vw, 3.2rem);
         white-space: nowrap !important;
         overflow: visible !important;
         text-overflow: clip !important;
@@ -643,7 +643,7 @@ header h1 {
 
 @media screen and (max-width: 480px) {
     #intro h2 {
-        font-size: clamp(0.8rem, 2vw, 1.4rem);  
+        font-size: clamp(1.4rem, 5.5vw, 3rem);  
         margin-bottom: 1.5rem;
         padding: 0 5px;
         line-height: 1.6;
